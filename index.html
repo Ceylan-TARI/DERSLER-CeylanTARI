@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceylan TARI - Ders Sayfaları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            padding-top: 30px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .content h2 {
+            color: #667eea;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+        }
+
+        .pages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .page-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            padding: 25px;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .page-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            word-break: break-word;
+        }
+
+        .page-card p {
+            font-size: 0.95em;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        .page-card .button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+
+        .page-card:hover .button {
+            background: #f0f0f0;
+        }
+
+        .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .empty-state p {
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .pages-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Ceylan TARI</h1>
+            <p>Eğitim Sayfaları</p>
+        </header>
+
+        <div class="content">
+            <h2>📚 Yüklü Sayfalar</h2>
+            
+            <div class="pages-grid">
+                <a href="Ceylan%20Tar%C4%B1%20_%201'i%20Vur!%20Balon%20Av%C4%B1.html" class="page-card">
+                    <div class="icon">🎈</div>
+                    <h3>1'i Vur! Balon Avı</h3>
+                    <p>Sayıları tanıma ve hızlı refleks oyunu</p>
+                    <span class="button">Sayfayı Aç →</span>
+                </a>
+
+                <a href="Ceylan%20Tar%C4%B1%20_%20A%20Harfi%20Bulma%20Oyunu%20(1).html" class="page-card">
+                    <div class="icon">🔤</div>
+                    <h3>A Harfi Bulma Oyunu</h3>
+                    <p>Harfleri tanıma ve eşleştirme oyunu</p>
+                    <span class="button">Sayfayı Aç →</span>
+                </a>
+
+                <a href="N%20Harfi%20Akvaryumu%20(2).html" class="page-card">
+                    <div class="icon">🐠</div>
+                    <h3>N Harfi Akvaryumu</h3>
+                    <p>N harfini tanıma ve öğrenme oyunu</p>
+                    <span class="button">Sayfayı Aç →</span>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>💫 Öğrenmeye devam et! Harika bir gün geçir!</p>
+        </footer>
+    </div>
+</body>
+</html>
